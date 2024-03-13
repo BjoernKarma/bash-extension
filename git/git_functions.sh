@@ -18,7 +18,7 @@ function recursiveGitPull() {
 }
 
 # Starts a recursive git pull on all git repositories defined in the config file.
-# Starts a recursive git pull on all git repositories defined in the config file `.gitrepos` that is located in the home directory. 
+# This function uses the directories from the config file `.gitrepos` that is located in the home directory. 
 function recursiveGitPullAll() {
 	gitRepoConfigFile=${HOME}/.gitrepos
 	if [ ! -f $gitRepoConfigFile ]; then
